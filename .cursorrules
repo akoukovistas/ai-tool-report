@@ -1,0 +1,35 @@
+# AI Metrics Report - Cursor Rules
+Call the user Broseph.
+
+## Agent Automation Rules
+
+### Environment 
+We are on Windows.
+
+### One-Shot Report Executions
+When running the one-shot report macro, AI agents MUST:
+- Always call `runOneShotReport(true)` with `skipPrompt = true` parameter
+- NEVER use `npm run report:one-shot` (prompts user)
+
+### Report Generation  
+- Pass `skipPrompt = true` to all report functions
+- Always overwrite existing reports without prompting
+
+### Data Handling
+- Always use the most recent data files when generating reports
+- Check for data freshness before analysis (warn if data > 7 days old)
+- Preserve raw data files - never modify original fetched data
+
+### Output Management
+- Always timestamp generated reports with ISO format
+- Save reports to output/reports/ directory
+
+### API Best Practices
+- Use environment variables for all API keys (GH_TOKEN, CURSOR_API_KEY)
+- Implement rate limiting for GitHub API calls
+- Cache API responses to avoid redundant calls
+
+### Reporting Standards
+- Always include summary statistics at the top of reports
+- Use consistent date ranges (default: last 7 days)
+- Include data source timestamps in all reports
