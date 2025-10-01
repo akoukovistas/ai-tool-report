@@ -296,15 +296,13 @@ Engineering ICs Active (Last 7 Days): 72
 - **System status dashboard** - Health monitoring and diagnostics
 - **Better error handling** - Clear error messages and troubleshooting
 
-### 🎯 Planned Improvements
+### 🔮 Future Ideas
 - **Testing framework** - Unit and integration tests with Vitest
 - **Enhanced dashboards** - Interactive web analytics
 - **Cross-platform insights** - Combined GitHub + Cursor user journey analysis  
 - **Automated scheduling** - Cron-based report generation
 - **Trend analysis** - Historical usage pattern tracking
 - **Export formats** - PDF, Excel, and BI tool integrations
-
-### 🔮 Future Ideas
 - **GraphQL API** - Query interface for external integrations
 - **Real-time monitoring** - Live usage dashboards
 - **Machine learning insights** - Predictive analytics for adoption patterns
